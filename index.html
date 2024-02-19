@@ -7,46 +7,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MOCHIKITCHIEN </title>
   <link rel="stylesheet" type="text/css" href="style.css" />
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 <header>
   <div class= "title flex">
-    <h1>Mochi's Kitchen</h1>
+    <h1>MochiKitchen</h1>
     <ul class="header_menu">
-      <li><a href="./form.html">メニューを登録</a></li>
-      <li><a class="recipe" href="./menu.html">Myレシピ</a></li>
+      <li><a href="/Users/19ryosuke/Desktop/foundations/mochikithien/form.html">メニューを登録</a></li>
+      <li><a class="recipe" href="/Users/19ryosuke/Desktop/foundations/mochikithien/menu.html">Myレシピ</a></li>
     </ul>
   </div>
 </header>
 
 <div class="search">
-<div class="cate">メニュー検索</div>
-  <div class="parent">
-    <div class="example2">
-      <input type="checkbox" id="1" name="example2"><label for="1">#papa</label>
-      <input type="checkbox" id="2" name="example2"><label for="2">#mama</label>
-    </div>
-    <div class="example2">
+  <div class="cate">メニュー検索</div>
+<div class="parent">
+  <div class="example2">
+    <div class="subtitle">Chef</div>
+    <input type="checkbox" id="1" name="example2" value="papa"><label for="1">#papa</label>
+    <input type="checkbox" id="2" name="example2" value="mama"><label for="2">#mama</label>
+  </div>
+  <div class="example2">
     <form class="example2" name="select">
-      <input type="radio" id="11" name="example3" value="maindish"><label for="11">主菜</label>
-      <input type="radio" id="12" name="example3" value="sidedish"><label for="12">副菜</label>
-      <input type="radio" id="13" name="example3" value="fob"><label for="13">主食</label>
-      <input type="radio" id="14" name="example3" value="soup"><label for="14">汁・スープ</label>
+      <div class="subtitle">TYPE</div>
+      <input type="radio" id="11" name="example3" value="maindish"><label for="11">#mainDish</label>
+      <input type="radio" id="12" name="example3" value="sidedish"><label for="12">#sideDish</label>
+      <input type="radio" id="13" name="example3" value="fob"><label for="13">#FoB</label>
+      <input type="radio" id="14" name="example3" value="soup"><label for="14">#soup</label>
     </div>
     <div class="example2">
-      <input type="radio" id="15" name="example4"><label for="15">魚</label>
-      <input type="radio" id="16" name="example4"><label for="16">肉</label>
+      <div class="subtitle">Fish or Beef</div>
+      <input type="radio" id="15" name="example4" value="fish"><label for="15">#Fish</label>
+      <input type="radio" id="16" name="example4" value="beef"><label for="16">#Beef</label>
     </div>
     <div class="example2">
-      <input type="radio" id="17" name="example5"><label for="17">10分</label>
-      <input type="radio" id="18" name="example5"><label for="18">30分</label>
-      <input type="radio" id="19" name="example5"><label for="19">１時間</label>
-      <input type="radio" id="20" name="example5"><label for="20">半日</label>
+      <div class="subtitle">Time</div>
+      <input type="radio" id="17" name="example5" value="10min"><label for="17">#10min</label>
+      <input type="radio" id="18" name="example5" value="30min"><label for="18">#30min</label>
+      <input type="radio" id="19" name="example5" value="1h"><label for="19">#1h</label>
+      <input type="radio" id="20" name="example5" value="harfday"><label for="20">#halfDay</label>
     </div>
-    </form>
-    
+    </form>  
   </div>
   <button class="push">検索</button>
 </div>
@@ -54,11 +58,7 @@
 <div class="recomendrecipe"> </div>
 
 <div class="menulist"> </div>
-<!-- <div class="menulist"> </div> -->
-
-
-<!-- <img class="pic" src="otoha.JPG" width="500" height="700"    alt="画像がありません"> -->
-
+<div class="menulist"> </div>
     
 <script src="menu.js"></script>
 <script src="recipe.js"></script>
