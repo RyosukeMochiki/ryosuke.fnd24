@@ -61,16 +61,6 @@ const allMochiMenu = [
     Time: "1h",
     Picture: "pictures/chin.jpg",
   },
-  {
-    Number: "007",
-    Menuname: "パエリア",
-    Chef: "papa",
-    Type: "maindish",
-    Forb: "Fish",
-    About: "Good tast", 
-    Time: "1h",
-    Picture: "pictures/pae.jpeg",
-  },
 ]
 
 for ( let i = 0 ; i < allMochiMenu.length ; i++){
