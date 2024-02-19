@@ -1,6 +1,5 @@
-/* まず、style.cssにこのルールを書き入れてください。 */
 body {
-  background: #fff;
+  background: #f2f2f2;
 }
 
 h1 {
@@ -17,16 +16,14 @@ p {
 .flex {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
   align-items: center;
 }
 
 header {
-  /* background-image:url('pictures/paprika22.png'); */
   position: sticky;
   top: 0;
   width: 1100px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   bottom: 10px;
   margin: 0 auto;
   border-bottom: 3px solid #ed312b;
@@ -56,10 +53,8 @@ li {
   align-items: center;
   height: auto;
   width: 1100px;
-  /* background-color: #eff1f5; */
   margin: 40px auto;
 }
-
 
 .parent {
   display: flex;
@@ -68,23 +63,6 @@ li {
   flex-wrap: wrap;
   margin: 20px;
 }
-/* 
-.child {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: black;
-  border: solid 1px #fff;
-  border-radius: 1em;
-  /* border-top-right-radius: 10% 30%;
-  text-align: center;
-  border-color: gray;
-  width: 100px;
-  height: auto;
-  font-size: medium;
-  margin: auto;
-} 
-*/
 
 .subtitle {
   font: icon;
@@ -92,24 +70,13 @@ li {
   font-size: x-large;
   width: 150px;
   float: left;
-  /* margin-right: 20px; */
   border-left: solid 3px #e0505d;
   padding-left: 10px;
-
 }
 
 .push {
-  /* justify-content: center;
-  align-items: center;
-  margin: 20px;
-  width: 150px;
-  text-align: center;
-  background-color: #7fbfff;
-  color: #fff;
-  font-size: xx-large; */
   display: block;
   text-align: center;
-  /* vertical-align: middle; */
   text-decoration: none;
   width: 200px;
   margin: 50px auto;
@@ -127,7 +94,6 @@ button.push:hover {
   background: #fff;
 }
 
-
 .menu {
   justify-content: center;
   align-items: center;
@@ -137,18 +103,14 @@ button.push:hover {
   font-size: xx-large;
 }
 
-/* label, input[type=text]{
-  display:block;
-} */
-
 .list {
-  /* background-color: #fff; */
   margin-bottom: 20px;
   width: 800px;
   margin: 0 auto;
 }
 
 .menulist {
+  font: icon;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,6 +118,7 @@ button.push:hover {
   height: auto;
   margin: 0 auto;
   border-radius: 1em;
+  font-size: x-large;
 
 }
 .exam {
@@ -223,16 +186,15 @@ button.push:hover {
   border-radius: 100vh;
 }
 
-
 .third {
   display: flex;
   margin: 20px;
-  /* flex-direction: column; */
-  /* justify-content: center; */
 }
+
 #number {
   width: 100px;
   height: 25px;
+  font-size: x-large;
 }
 #foodName {
   width: 300px;
@@ -242,17 +204,15 @@ button.push:hover {
   font-size: x-large;
 }
 
-
 #pic {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-
 }
+
 .pic{
   border-radius: 30px;
 }
-
 
 #memo {
   text-align: center;
@@ -265,17 +225,14 @@ button.push:hover {
   border: 2px solid #ed312b;
   color: #ed312b;
   border-radius: 100vh;
-  /* background-color: beige; */
-
 }
 
 .form {
   width:800px;
   margin:50px auto;
-  /* background-color: antiquewhite; */
   padding: auto;
-
 }
+
 .item{
   display: flex;
   overflow: hidden;
@@ -283,6 +240,7 @@ button.push:hover {
   align-items: center;
   justify-content: flex-start;
 }
+
 .label{
   float: left;
   margin-right: 20px;
@@ -321,10 +279,10 @@ button {
   color: #fff;
 }
 
-
 .example2{
   display: flex;
 }
+
 .example2 label{
   display: block;
   width: 150px;
@@ -338,11 +296,13 @@ button {
   border-radius: 30px;
   cursor: pointer;
 }
+
 .example2 input:checked+label{
   border: 2px solid #27acd9;
   background: #27acd9;
   color: #fff;
 }
+
 .example2 input{
   display: none;
 }
