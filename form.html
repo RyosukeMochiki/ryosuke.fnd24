@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOCHIKITCHIEN </title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  
+</head>
+
+<body>
+<header>
+  <div class= "title flex">
+    <h1><a href="./index.html">Mochi's Kitchen</h1></a>
+    <ul class="header_menu">
+      <li><a href="./form.html">メニューを登録</a></li>
+      <li><a class="recipe"  href="./menu.html">Myレシピ</a></li>
+    </ul>
+  </div>
+</header>
+
+  <div class="form" name="save"  action="form.html" method="get">
+   
+    <div class="item">
+      <p class="label">料理名</p>
+      <input type="text" name="recipename">
+    </div>
+
+    <div class="item">
+      <p class="label" name="chef">シェフ</p>
+      <input id="mama" type="checkbox" name="chef" value="mama"><label for="mama">MAMA</label>
+      <input id="papa" type="checkbox" name="chef" value="papa"><label for="papa">PAPA</label>
+    </div>
+  <form id="radio" name="foodtype">
+    <div class="item">
+      <p class="label">TYPE</p>
+      <input id="maindish" type="radio" name="foodtype" value="maindish"><label for="maindish">主菜</label>
+      <input id="sidedish" type="radio" name="foodtype" value="sidedish"><label for="sidedish">副菜</label>
+      <input id="fob" type="radio" name="foodtype" value="fob"><label for="fob">主食</label>
+      <input id="soup" type="radio" name="foodtype" value="soup"><label for="soup">スープ</label>
+    </div>
+    <div class="item">
+      <p class="label">魚か肉か</p>
+      <input id="fish" type="radio" name="FOB" value="fish"><label for="fish">魚</label>
+      <input id="meet" type="radio" name="FOB" value="meet"><label for="meet">肉</label>
+    </div>
+  </form>
+
+    <div class="item">
+      <p class="label">所要時間</p>
+      <select id="cookingTime" name="sushi">
+        <option value="10min">10分</option>
+        <option value="30min">30分</option>
+        <option value="1h">１時間</option>
+        <option value="harfday">半日</option>
+      </select>
+    </div>
+
+    <div class="item">
+      <p class="label">コメント</p>
+      <input type="text" name="comment">
+    </div>
+
+    <div class="item">
+      <p class="label">写真を登録</p>
+      <input type="file" id="exampic" accept="image/jpeg, image/png"><br><br>
+    </div>
+
+    <div class="btn-area">
+      <button id="save" type=“button”>登録</button>
+      <!-- <button id="save" type=“button” onclick="location.href='/Users/19ryosuke/Desktop/foundations/mochikithien/menu.html'">登録</button> -->
+    </div>
+  </div>
+
+  <img id="image_view">
+
+  <!-- <p class="try">名前</p>
+  <input class="try" type="text">
+  <form class="label" name="label">
+    <input id="fish" type="radio" name="FOB" value="fish"><label for="fish">魚</label>
+    <input id="meet" type="radio" name="FOB" value="meet"><label for="meet">肉</label>
+  </form>
+  <button class="trytag" type=“button” >登録</button> -->
+
+<script src="form.js"></script>
+<script src="menu.js"></script>
+<script src="recipe.js"></script>
+<script src="mainscript.js"></script>
+</body>
+
+</html>
