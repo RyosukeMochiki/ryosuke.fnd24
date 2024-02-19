@@ -41,6 +41,36 @@ const allMochiMenu = [
     Time: "30min",
     Picture: "pictures/kin.jpg",
   },
+  {
+    Number: "005",
+    Menuname: "味噌汁",
+    Chef: "mama",
+    Type: "soup",
+    Forb: "",
+    About: "ほっと温まる", 
+    Time: "30min",
+    Picture: "pictures/kin.jpg",
+  },
+  {
+    Number: "006",
+    Menuname: "青椒肉絲",
+    Chef: "mama",
+    Type: "fob",
+    Forb: "Meat",
+    About: "美味しい中華、バズレシピ", 
+    Time: "1h",
+    Picture: "pictures/kin.jpg",
+  },
+  {
+    Number: "007",
+    Menuname: "パエリア",
+    Chef: "papa",
+    Type: "maindish",
+    Forb: "Fish",
+    About: "Good tast", 
+    Time: "1h",
+    Picture: "pictures/pae.jpg",
+  },
 ]
 
 for ( let i = 0 ; i < allMochiMenu.length ; i++){
