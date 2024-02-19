@@ -1,12 +1,11 @@
 'use strict'
-// 1行目に記載している 'use strict' は削除しないでください
 
 const allMochiMenu = [
   {
     Number: "001",
     Menuname: "ラザニア",
     Chef: "mama",
-    Type: "maindish",
+    Type: "fob",
     Forb: "Meat",
     About: "Good tast", 
     Time: "harfday",
@@ -37,18 +36,16 @@ const allMochiMenu = [
     Menuname: "きんぴら",
     Chef: "mama",
     Type: "sidedish",
-    Forb: "肉も魚OK",
+    Forb: "",
     About: "Good tast", 
     Time: "30min",
     Picture: "pictures/kin.jpg",
   },
 ]
 
-
 for ( let i = 0 ; i < allMochiMenu.length ; i++){
   localStorage.setItem(allMochiMenu[i].Number,JSON.stringify(allMochiMenu[i]))
 }
-
 
 const newlist = [];
 for ( let num = 1; num < 1000 ; num++){
@@ -58,5 +55,4 @@ for ( let num = 1; num < 1000 ; num++){
   }else{
     break;
   }
-  
 }
