@@ -70,3 +70,39 @@ button.addEventListener("click", function (){
   });
 }
 )
+
+
+  let selectmenus = newlist.filter(papacheck).filter(type).filter(Forb).filter(Time)
+  console.log(selectmenus)
+  if(selectmenus.length === 0){
+    return alert("入力が足りないか該当のメニューはありません！")
+  }
+
+  let randam = Math.floor( Math.random() * selectmenus.length);
+  document.getElementsByClassName("menulist")[0].innerHTML = '<img class="pic" src="' + selectmenus[randam].Picture + '" width="700" height="400" alt="画像がありません">'; 
+  document.getElementsByClassName("menulist")[1].innerText= selectmenus[randam]["Menuname"];
+  // 楽天API
+  const url = 'https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?applicationId=1045612827288089180';
+  const updateText = (data) => {
+    for (let i = 0; i < 1; i++) {
+        const insertHtml = `
+            <li>
+                <h1>楽天レシピ　ランキング１位<!/h1>
+                <a href="${data[i].recipeUrl}" target="_blank">
+                    <img id="raku" src="${data[i].foodImageUrl}" alt="${data[i].recipeTitle} 画像">
+                </a>
+                <h2>${data[i].recipeTitle}</h2>
+                <p>${data[i].recipeDescription}</p>
+            </li>
+        `;
+        $('#recipe_list').append(insertHtml);
+    }
+  }
+  
+  // API取得
+  $.getJSON(url, (data) => {
+    const recipes = data.result;
+    updateText(recipes);
+  });
+}
+)
