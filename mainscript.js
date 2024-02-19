@@ -45,6 +45,7 @@ button.addEventListener("click", function (){
   let randam = Math.floor( Math.random() * selectmenus.length);
   document.getElementsByClassName("menulist")[0].innerHTML = '<img class="pic" src="' + selectmenus[randam].Picture + '" width="700" height="400" alt="画像がありません">'; 
   document.getElementsByClassName("menulist")[1].innerText= selectmenus[randam]["Menuname"];
+  
   // 楽天API
   const url = 'https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?applicationId=1045612827288089180';
   const updateText = (data) => {
@@ -70,3 +71,5 @@ button.addEventListener("click", function (){
   });
 }
 )
+
+
