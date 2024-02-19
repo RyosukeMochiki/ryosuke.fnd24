@@ -1,0 +1,329 @@
+/* まず、style.cssにこのルールを書き入れてください。 */
+body {
+  background: #fffbf4;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+p {
+  color: grey;
+}
+
+.title {
+  color: rgb(95, 185, 21);
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 1100px;
+  background-color: #fffbf4;
+  bottom: 10px;
+  margin: 0 auto;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  padding: 20px;
+  list-style: none;
+  
+}
+.cate {
+  display: flex;
+  justify-self: center;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 1100px;
+  /* background-color: #eff1f5; */
+  margin: 0 auto;
+}
+.parent {
+  display: flex;
+  width: 500px;
+  height: auto;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.child {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+  border: solid 1px #fff;
+  border-radius: 1em;
+  /* border-top-right-radius: 10% 30%; */
+  text-align: center;
+  border-color: gray;
+  width: 100px;
+  height: auto;
+  font-size: medium;
+  margin: auto;
+}
+
+.push {
+  /* justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 150px;
+  text-align: center;
+  background-color: #7fbfff;
+  color: #fff;
+  font-size: xx-large; */
+  display: block;
+  text-align: center;
+  /* vertical-align: middle; */
+  text-decoration: none;
+  width: 200px;
+  margin: 20px;
+  padding: 1rem 4rem;
+  font-weight: bold;
+  border: 2px solid #27acd9;
+  background: #27acd9;
+  color: #fff;
+  border-radius: 100vh;
+  transition: 0.5s;
+}
+
+button.push:hover {
+  color: #27acd9;
+  background: #fff;
+}
+
+
+.menu {
+  justify-content: center;
+  align-items: center;
+  margin: 50px ;
+  width: auto;
+  text-align: center;
+  font-size: xx-large;
+}
+
+/* label, input[type=text]{
+  display:block;
+} */
+
+.list {
+  /* background-color: #fff; */
+  margin-bottom: 20px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.menulist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 1em;
+
+}
+.exam {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.second {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: 50px;
+  align-items: center;
+  margin: 20px;
+}
+#chef {
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: auto;
+  margin: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border: 2px solid #ed312b;
+  color: #ed312b;
+  border-radius: 100vh;
+}
+#type {
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: auto;
+  margin: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border: 2px solid #ed312b;
+  color: #ed312b;
+  border-radius: 100vh;
+}
+
+#fOB {
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: auto;
+  margin: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border: 2px solid #ed312b;
+  color: #ed312b;
+  border-radius: 100vh;
+}
+
+#time {
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: auto;
+  margin: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border: 2px solid #ed312b;
+  color: #ed312b;
+  border-radius: 100vh;
+}
+
+
+.third {
+  display: flex;
+  margin: 20px;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+}
+#number {
+  width: 100px;
+  height: 25px;
+}
+#foodName {
+  width: 300px;
+  height: 25px;
+  border: #c8eac3;
+  border-radius: 2%;
+  font-size: x-large;
+}
+
+
+#pic {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+.pic{
+  border-radius: 30px;
+}
+
+
+#memo {
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: auto;
+  margin: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border: 2px solid #ed312b;
+  color: #ed312b;
+  border-radius: 100vh;
+  /* background-color: beige; */
+
+}
+
+.form {
+  width:800px;
+  margin:50px auto;
+  /* background-color: antiquewhite; */
+  padding: auto;
+
+}
+.item{
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.label{
+  float: left;
+  margin-right: 20px;
+  width:135px;
+  border-left: solid 3px #e0505d;
+  padding-left: 10px;
+}
+
+.inputs{
+  float: left;
+  width:300px;
+}
+
+input[type="text"] {
+  font-size: xx-large;
+}
+
+.btn-area{
+  text-align: center;
+  margin: 80px;
+}
+
+button {
+  width: 300px;
+  cursor: pointer;
+  border-radius: 100px;
+  width: 200px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px 0;
+  font-size: large;
+  border: 2px solid #27acd9;
+  background: #27acd9;
+  color: #fff;
+}
+
+
+.example2{
+  display: flex;
+}
+.example2 label{
+  display: block;
+  width: 150px;
+  background: #d1d1d1;
+  color: #000;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.example2 input:checked+label{
+  border: 2px solid #27acd9;
+  background: #27acd9;
+  color: #fff;
+}
+.example2 input{
+  display: none;
+}
