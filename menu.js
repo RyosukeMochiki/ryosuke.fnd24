@@ -10,7 +10,7 @@ const allMochiMenu = [
     Forb: "Meat",
     About: "Good tast", 
     Time: "harfday",
-    Picture: "pictures/raza.jpg",
+    Picture: "pictures/raza.jpeg",
   },
   {
     Number: "002",
@@ -30,7 +30,7 @@ const allMochiMenu = [
     Forb: "Meat",
     About: "Good tast", 
     Time: "30min",
-    Picture: "pictures/tacos.jpg",
+    Picture: "pictures/tacos.jpeg",
   },
   {
     Number: "004",
