@@ -12,6 +12,7 @@ p {
 
 .title {
   color: rgb(95, 185, 21);
+  font-size: x-large;
 }
 .flex {
   display: flex;
