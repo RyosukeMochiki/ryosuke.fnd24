@@ -1,6 +1,5 @@
 'use strict'
 
-
 const recipe = document.getElementsByClassName("recipe")[0];
 recipe.addEventListener("click", function(){
   const paragraph = document.createElement("p");
