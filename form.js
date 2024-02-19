@@ -1,8 +1,6 @@
 'use strict'
 
 //入力フォーム
-
-
 let inputFile = document.getElementById('exampic');
 
 let picname = "";
@@ -49,5 +47,6 @@ function registration(){
 
 const formbutton = document.getElementById("save");
 formbutton.addEventListener("click", registration)
+
 
 
