@@ -49,7 +49,7 @@ const allMochiMenu = [
     Forb: "",
     About: "ほっと温まる", 
     Time: "30min",
-    Picture: "pictures/kin.jpg",
+    Picture: "pictures/miso.jpeg",
   },
   {
     Number: "006",
@@ -59,7 +59,7 @@ const allMochiMenu = [
     Forb: "Meat",
     About: "美味しい中華、バズレシピ", 
     Time: "1h",
-    Picture: "pictures/kin.jpg",
+    Picture: "pictures/chin.jpg",
   },
   {
     Number: "007",
@@ -69,7 +69,7 @@ const allMochiMenu = [
     Forb: "Fish",
     About: "Good tast", 
     Time: "1h",
-    Picture: "pictures/pae.jpg",
+    Picture: "pictures/pae.jpeg",
   },
 ]
 
@@ -86,3 +86,4 @@ for ( let num = 1; num < 1000 ; num++){
     break;
   }
 }
+
