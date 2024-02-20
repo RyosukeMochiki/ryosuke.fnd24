@@ -3,11 +3,11 @@
 //ボタンを押したら条件に合ったメニューからランダムでメニュー名と写真を出力する関数
 const button = document.getElementsByTagName("button")[0];
 button.addEventListener("click", function (){
-  const papachef =  document.getElementById("1").checked;
-  const mamachef =  document.getElementById("2").checked;
-  const foodtypeSelect = document.forms['select'].elements['example3'].value; //TYPE
-  const FOBSelect = document.forms['select'].elements['example4'].value; //FoB
-  let cookingTime = document.forms['select'].elements['example5'].value; //時間
+  const papachef =  document.getElementById("papa").checked;
+  const mamachef =  document.getElementById("mama").checked;
+  const foodtypeSelect = document.forms['select'].elements['type'].value; //TYPE
+  const FOBSelect = document.forms['select'].elements['fob'].value; //FoB
+  let cookingTime = document.forms['select'].elements['time'].value; //時間
   function papacheck (obj){
     if(mamachef){
       if(obj["Chef"] === "mama"){
@@ -70,5 +70,6 @@ button.addEventListener("click", function (){
   });
 }
 )
+
 
 
