@@ -25,6 +25,7 @@ header {
   position: sticky;
   top: 0;
   width: auto;
+  height: 80px;
   background-color: #f2f2f2;
   bottom: 10px;
   margin: 0 auto;
@@ -244,7 +245,7 @@ justify-content: right;
 .item{
   display: flex;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   align-items: center;
   justify-content: flex-start;
 }
@@ -268,7 +269,7 @@ input[type="text"] {
 
 .btn-area{
   text-align: center;
-  margin: 80px;
+  margin: 30px;
 }
 
 button {
