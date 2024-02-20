@@ -287,11 +287,11 @@ button {
   color: #fff;
 }
 
-.example2{
+.sub-item{
   display: flex;
 }
 
-.example2 label{
+.sub-item label{
   display: block;
   width: 150px;
   background: #d1d1d1;
@@ -305,13 +305,13 @@ button {
   cursor: pointer;
 }
 
-.example2 input:checked+label{
+.sub-item input:checked+label{
   border: 2px solid #27acd9;
   background: #27acd9;
   color: #fff;
 }
 
-.example2 input{
+.sub-item input{
   display: none;
 }
 
@@ -328,4 +328,3 @@ button {
 #raku {
   width: 300px;
 }
-
