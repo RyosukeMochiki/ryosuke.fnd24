@@ -11,45 +11,45 @@
 </head>
 
 <body>
-<header>
-  <div class= "title flex">
-    <h1>MochiKitchen</h1>
-    <ul class="header_menu">
-      <li><a href="form.html">メニューを登録</a></li>
-      <li><a class="recipe" href="menu.html">Myレシピ</a></li>
-    </ul>
-  </div>
-</header>
-<div class="layout">
-  <div>
-    <div class="search">
-      <div class="cate">メニュー検索</div>
-    <div class="parent">
-      <div class="example2">
-        <div class="subtitle">シェフ</div>
-        <input type="checkbox" id="1" name="example2" value="papa"><label for="1">#パパ</label>
-        <input type="checkbox" id="2" name="example2" value="mama"><label for="2">#ママ</label>
-      </div>
-      <div class="example2">
-        <form class="example2" name="select">
-          <div class="subtitle">種類</div>
-          <input type="radio" id="11" name="example3" value="maindish"><label for="11">#主菜</label>
-          <input type="radio" id="12" name="example3" value="sidedish"><label for="12">#副菜</label>
-          <input type="radio" id="13" name="example3" value="fob"><label for="13">#主食</label>
-          <input type="radio" id="14" name="example3" value="soup"><label for="14">#スープ</label>
+  <header>
+    <div class= "title flex">
+      <h1>MochiKitchen</h1>
+      <ul class="header_menu">
+        <li><a href="form.html">メニューを登録</a></li>
+        <li><a class="recipe" href="menu.html">Myレシピ</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="layout"> 
+    <div>
+      <div class="search">
+        <div class="cate">メニュー検索</div>
+      <div class="parent">
+        <div class="sub-item">
+          <div class="subtitle">シェフ</div>
+          <input type="checkbox" id="papa" name="example2" value="papa"><label for="papa">#パパ</label>
+          <input type="checkbox" id="mama" name="example2" value="mama"><label for="mama">#ママ</label>
         </div>
-        <div class="example2">
+        <div class="sub-item">
+          <form class="sub-item" name="select">
+            <div class="subtitle">種類</div>
+            <input type="radio" id="main" name="type" value="maindish"><label for="main">#主菜</label>
+            <input type="radio" id="side" name="type" value="sidedish"><label for="side">#副菜</label>
+            <input type="radio" id="fb" name="type" value="fob"><label for="fb">#主食</label>
+            <input type="radio" id="miso" name="type" value="soup"><label for="miso">#スープ</label>
+        </div>
+        <div class="sub-item">
           <div class="subtitle">魚 or 肉</div>
-          <input type="radio" id="15" name="example4" value="Fish"><label for="15">#魚</label>
-          <input type="radio" id="16" name="example4" value="Meat"><label for="16">#肉</label>
+          <input type="radio" id="15" name="fob" value="Fish"><label for="15">#魚</label>
+          <input type="radio" id="16" name="fob" value="Meat"><label for="16">#肉</label>
         </div>
-        <div class="example2">
+        <div class="sub-item">
           <div class="subtitle">所要時間</div>
-          <input type="radio" id="17" name="example5" value="10min"><label for="17">#10分</label>
-          <input type="radio" id="18" name="example5" value="30min"><label for="18">#30分</label>
-          <input type="radio" id="19" name="example5" value="1h"><label for="19">#1時間</label>
-          <input type="radio" id="20" name="example5" value="harfday"><label for="20">#半日</label>
-        </div>
+          <input type="radio" id="ten" name="time" value="10min"><label for="ten">#10分</label>
+          <input type="radio" id="thirty" name="time" value="30min"><label for="thirty">#30分</label>
+          <input type="radio" id="hour" name="time" value="1h"><label for="hour">#1時間</label>
+          <input type="radio" id="harf" name="time" value="harfday"><label for="harf">#半日</label>
+      </div>
         </form>  
       </div>
       <button class="push">検索</button>
@@ -61,6 +61,11 @@
   <div id="recipe_list"></div>
 </div>
     
+<script src="menu.js"></script>
+<script src="mainscript.js"></script>
+</body>
+
+</html>
 <script src="menu.js"></script>
 <script src="mainscript.js"></script>
 </body>
