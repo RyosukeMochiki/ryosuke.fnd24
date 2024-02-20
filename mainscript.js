@@ -60,7 +60,7 @@ button.addEventListener("click", function (){
       <p>${data[randam].recipeDescription}</p>
       </li>
       `;
-      $('#recipe_list').append(insertHtml);
+      document.getElementById("recipe_list").innerHTML = insertHtml;
   }
   
   // API取得
