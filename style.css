@@ -322,7 +322,7 @@ button {
   list-style: none;
   width: 25%;
   font-size: 12px;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 #raku {
